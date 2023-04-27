@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Magra:wght@400;700&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,100;1,500;1,600;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body 
+{
+    background-image: url("background-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .welcoming{
+    margin:2% 12% 20px;
+    color:white;
+ }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+  }
+  
+  .left-column {
+    width: 70%;
+    
+  }
+  
+  .right-column {
+    margin-right:5%;
+    margin-top:-7%;
+
+  }
+  
+  .img1 {
+    float: right;
+    margin: 10% 0 0 10px;
+    width: 100%;
+    height: 40%;
+  }
+  form{
+    margin-left:20%;
+  }
+  label 
+  {
+    display: block;
+    margin: 20px 20px 10px;
+
+  }
+  
+  input[type="number"]
+  {
+    display: block;
+    width: 40%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin:10px 20px 10px;
+  }
+  
+  #min-support-error,
+  #confidence-error,
+  #lift-error{
+    color: red;
+    font-size:14px;
+    margin-left:20px;
+
+  }
+ 
+  /* Style for select */
+  label[for="algorithm"] {
+    display: block;
+  }
+  
+  select {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    margin:0px 20px 5px ;
+  }
+  #file-upload{
+    margin:10px 20px 10px ;
+  }
+  input[type="submit"] {
+    background-color: #0B507C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left:20px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0caaca;
+  }

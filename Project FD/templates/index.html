@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="static/style.css"> -->
+    <link rel="icon" href="{{ url_for('static', filename='analyze.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Data Mining</title>
+
+</head>
+<body>
+    <h1 class="welcoming">Welcome to Data mining's Algorithm ..</h1>
+
+    <div class="container">
+        <div class="left-column">
+            <div class="form-container">
+
+                <form action="/upload" method="POST" enctype="multipart/form-data">
+                    <!-- Choosing a dataset -->
+                    
+                    <label for="file-upload" >Choose a file:</label>
+                    <input type="file" id="file-upload" name="file">
+                    
+                    <label for="algorithm">Choose an algorithm:</label>
+
+                    <select id="algorithm" name="type_algorithme">
+
+                    <option selected value="1">Apriori</option>
+                    <option value="2">Improved Apriori by trasaction reduction</option>
+                    <!-- <option value="3">Improved Apriori by Partitioning</option> -->
+                    <option value="3">Close</option>
+
+                    </select>
+
+                    <label for="min-support">Enter Min Support (between 0 and 1):</label>
+                    <input type="number" id="min-support" name="min_supp" min="0" max="1" step=0.01 oninput="validateInput(this)"/>
+                    <p id="min-support-error"></p>
+                    
+                    <label for="confidence">Enter Confidence (between 0 and 1):</label>
+                    <input type="number" id="confidence" name="min_confidence" min="0" max="1" step=0.01 oninput="validateInput(this)"/>
+                    <p id="confidence-error"></p>
+                    
+                    <!-- <label for="lift">Enter Lift (>1):</label>
+                    <input type="text" id="lift" name="lift" oninput="validateInputLift(this)"/>
+                    <p id="lift-error"></p> -->
+                    
+              
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+              
+        </div>
+        <div class="right-column">
+            <img src="{{ url_for('static', filename='entropot.png') }}" alt="data_mining" class="img1">
+        </div>
+      </div>
+ <!-- Include the JavaScript file -->
+ <script src="script.js"></script>   
+</body>
+</html>

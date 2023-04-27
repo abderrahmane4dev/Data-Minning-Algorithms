@@ -1,0 +1,32 @@
+Les itemset frequent  :
+frozenset({'bread'})
+frozenset({'milk'})
+frozenset({'diapers'})
+frozenset({'cheese'})
+{'bread', 'milk'}
+{'diapers', 'milk'}
+{'diapers', 'bread'}
+{'bread', 'milk'}
+{'diapers', 'milk'}
+{'diapers', 'bread'}
+{'bread', 'milk'}
+{'diapers', 'milk'}
+{'diapers', 'bread'}
+(frozenset({'bread'}), frozenset({'milk'}), 0.5555555555555556, 0.925925925925926)
+(frozenset({'milk'}), frozenset({'bread'}), 0.8333333333333334, 0.9259259259259259)
+(frozenset({'diapers'}), frozenset({'milk'}), 0.5, 0.8333333333333334)
+(frozenset({'milk'}), frozenset({'diapers'}), 0.6666666666666667, 0.8333333333333334)
+(frozenset({'diapers'}), frozenset({'bread'}), 0.8749999999999999, 0.9722222222222221)
+(frozenset({'bread'}), frozenset({'diapers'}), 0.7777777777777777, 0.9722222222222221)
+(frozenset({'bread'}), frozenset({'milk'}), 0.5555555555555556, 0.925925925925926)
+(frozenset({'milk'}), frozenset({'bread'}), 0.8333333333333334, 0.9259259259259259)
+(frozenset({'diapers'}), frozenset({'milk'}), 0.5, 0.8333333333333334)
+(frozenset({'milk'}), frozenset({'diapers'}), 0.6666666666666667, 0.8333333333333334)
+(frozenset({'diapers'}), frozenset({'bread'}), 0.8749999999999999, 0.9722222222222221)
+(frozenset({'bread'}), frozenset({'diapers'}), 0.7777777777777777, 0.9722222222222221)
+(frozenset({'bread'}), frozenset({'milk'}), 0.5555555555555556, 0.925925925925926)
+(frozenset({'milk'}), frozenset({'bread'}), 0.8333333333333334, 0.9259259259259259)
+(frozenset({'diapers'}), frozenset({'milk'}), 0.5, 0.8333333333333334)
+(frozenset({'milk'}), frozenset({'diapers'}), 0.6666666666666667, 0.8333333333333334)
+(frozenset({'diapers'}), frozenset({'bread'}), 0.8749999999999999, 0.9722222222222221)
+(frozenset({'bread'}), frozenset({'diapers'}), 0.7777777777777777, 0.9722222222222221)
